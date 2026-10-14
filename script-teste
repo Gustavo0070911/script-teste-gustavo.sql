@@ -8,3 +8,6 @@ cpf varchar (15)
 SELECT * FROM professor;
 
  INSERT INTO professor (nome, email, cpf) VALUES ('gustavo', 'gustavo.esser@escola.pr.gov.br', '1234567890');
+
+Constraint fk_professor foreing key (id_professor) referencias professor (id_professor);
+
