@@ -2,12 +2,11 @@ CREATE TABLE Gustavo(
  id_Gustavo SERIAL PRIMARY KEY,
  nome varchar(255),
  email varchar(255),
- cpf varchar(15)
+ cpf varchar(15),
+ Constraint fk_caderno foreing key (id_caderno) referencias caderno (id_caderno);
  );
 
- SELECT * FROM Gustavo;
 
- INSERT INTO Gustavo (nome,email,cpf) VALUES ('gustavo','gustavo.esser@escola.pr.gov.br', '9876543219');
 
 
 
@@ -18,11 +17,6 @@ CREATE TABLE caderno(
  cpf varchar(15),
  anotacao varchar(255),
  );
-
- SELECT * FROM caderno;
-
- INSERT INTO caderno (nome,email,cpf,anotacao) VALUES ('caderno','gustavo.esser@escola.pr.gov.br', '1234567898');
-
-Constraint fk_Gustavo foreing key (id_Gustavo) referencias Gustavo (id_Gustavo);
+drop table Gustavo
 
 
