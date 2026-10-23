@@ -1,13 +1,12 @@
-CREATE TABLE professor(
-id_professor SERIAL PRIMARY KEY,
-nome varchar (255),
-email varchar (255),
-cpf varchar (15)
-);
+CREATE TABLE Gustavo(
+ id_Gustavo SERIAL PRIMARY KEY,
+ nome varchar(255),
+ email varchar(255),
+ cpf varchar(15)
+ );
 
-SELECT * FROM professor;
+ SELECT * FROM Gustavo;
 
- INSERT INTO professor (nome, email, cpf) VALUES ('gustavo', 'gustavo.esser@escola.pr.gov.br', '1234567890');
+ INSERT INTO Gustavo (nome,email,cpf) VALUES ('gustavo','gustavo.esser@escola.pr.gov.br', '9876543219');
 
-Constraint fk_professor foreing key (id_professor) referencias professor (id_professor);
-
+Constraint fk_Gustavo foreing key (id_Gustavo) referencias Gustavo (id_Gustavo);
