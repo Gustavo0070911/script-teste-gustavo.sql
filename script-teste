@@ -9,14 +9,14 @@ CREATE TABLE Gustavo(
 
  INSERT INTO Gustavo (nome,email,cpf) VALUES ('gustavo','gustavo.esser@escola.pr.gov.br', '9876543219');
 
-Constraint fk_Gustavo foreing key (id_Gustavo) referencias Gustavo (id_Gustavo);
+
 
 CREATE TABLE caderno(
  id_caderno SERIAL PRIMARY KEY,
  nome varchar(255),
  email varchar(255),
  cpf varchar(15),
-anotacao varchar(255)
+ anotacao varchar(255),
  );
 
  SELECT * FROM caderno;
@@ -24,3 +24,5 @@ anotacao varchar(255)
  INSERT INTO caderno (nome,email,cpf,anotacao) VALUES ('caderno','gustavo.esser@escola.pr.gov.br', '1234567898');
 
 Constraint fk_Gustavo foreing key (id_Gustavo) referencias Gustavo (id_Gustavo);
+
+
